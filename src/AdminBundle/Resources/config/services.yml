@@ -1,0 +1,8 @@
+parameters:
+    admin.album.controller.class: AdminBundle\Controller\AlbumController
+
+services:
+    admin.album:
+        class: %admin.album.controller.class%
+        public: true
+        scope:  request
